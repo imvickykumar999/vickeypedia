@@ -82,3 +82,30 @@ nav ul li a {
 .btn-danger:hover {
     background-color: #bd2130;
 }
+
+/* Custom styles for book cards */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-title {
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+}
+
+.card-text {
+    margin-bottom: 0.5rem;
+}
+
+.card-footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #ddd;
+    padding: 0.75rem 1.25rem;
+    text-align: right;
+}
