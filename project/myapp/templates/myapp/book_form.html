@@ -1,0 +1,15 @@
+{% extends 'myapp/base.html' %}
+
+{% block title %}{% if form.instance.pk %}Edit{% else %}New{% endif %} Book{% endblock %}
+
+{% block content %}
+<h1>{% if form.instance.pk %}Edit{% else %}New{% endif %} Book</h1>
+<div class="form-container">
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">{% if form.instance.pk %}Update{% else %}Create{% endif %} Book</button>
+        <a href="{% url 'book_list' %}" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
+{% endblock %}
