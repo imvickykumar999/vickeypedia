@@ -1,0 +1,4 @@
+django
+VicksTor
+requests
+stem

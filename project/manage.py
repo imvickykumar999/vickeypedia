@@ -3,6 +3,9 @@
 import os
 import sys
 
+# from HostTor import VicksTor
+import VicksTor as vix
+vix.run_server('flask')
 
 def main():
     """Run administrative tasks."""
