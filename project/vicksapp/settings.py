@@ -133,3 +133,8 @@ MEDIA_URL = '/media/'
 STATIC_ROOT = '/home/vickeypedia/vicksapp/static'
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "myapp/static")]
+
+SECURE_SSL_REDIRECT = False
+SECURE_HSTS_SECONDS = 0
+SECURE_HSTS_INCLUDE_SUBDOMAINS = False
+SECURE_HSTS_PRELOAD = False
